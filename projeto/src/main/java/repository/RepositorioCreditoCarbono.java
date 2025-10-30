@@ -1,6 +1,6 @@
 package repository;
 
-import entities.CreditoCarbono;
+import model.CreditoCarbono;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
