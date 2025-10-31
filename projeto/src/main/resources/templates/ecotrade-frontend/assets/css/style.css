@@ -1,0 +1,300 @@
+/* ======== PALETA DE COR ======== */
+:root {
+  --et-primary: #4caf50; /* Verde Principal */
+  --et-primary-dark: #2e7d32; /* Verde Escuro */
+  --et-secondary: #00bcd4; /* Ciano vibrante */
+  --et-background: #f8f9fa; /* Fundo mais limpo */
+  --et-card-bg: #ffffff;
+  --et-text-dark: #212529;
+  --et-text-muted: #6c757d;
+  --et-success: #28a745; /* Verde de sucesso padrão */
+  --et-danger: #dc3545; /* Vermelho de perigo padrão */
+
+  /* Bootstrap Overrides */
+  --bs-primary: var(--et-primary);
+  --bs-success: var(--et-success);
+  --bs-body-color: var(--et-text-dark);
+  --bs-body-bg: var(--et-background);
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+body {
+  background-color: var(--et-background);
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: var(--et-text-dark);
+  overflow-x: hidden;
+  padding-bottom: 70px; 
+}
+
+
+.info-card {
+  background-color: var(--et-card-bg);
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08); 
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.info-card:hover {
+  transform: translateY(-3px); 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /
+}
+
+.dashboard-header {
+  font-weight: 700;
+  color: var(--et-primary-dark);
+  letter-spacing: 0.5px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+
+.credits-balance-box {
+  background: linear-gradient(
+    135deg,
+    var(--et-primary),
+    var(--et-primary-dark)
+  ); 
+  color: white;
+  border-radius: 15px;
+  padding: 25px;
+  margin-top: 10px;
+  box-shadow: 0 8px 20px rgba(76, 175, 80, 0.4); 
+  transition: transform 0.4s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.credits-balance-box:hover {
+  transform: translateY(-3px);
+}
+
+.credits-balance-box h2 {
+  margin: 0;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+
+.chart-placeholder {
+  max-width: 180px; 
+  height: 180px; 
+  margin: 15px auto 0;
+  background-color: #f1f1f1;
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--et-text-muted);
+  font-size: 0.9rem;
+  border: 1px dashed #ccc;
+  transition: all 0.3s ease;
+}
+
+.chart-placeholder:hover {
+  background-color: #e9ecef;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--et-card-bg);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 8px 0;
+}
+
+.bottom-nav .nav-link {
+  color: var(--et-text-muted);
+  font-size: 0.75rem;
+  padding: 5px 0;
+  transition: color 0.3s ease, transform 0.2s ease; 
+  display: block;
+}
+
+.bottom-nav .nav-link.active,
+.bottom-nav .nav-link:hover {
+  color: var(--et-primary-dark);
+  transform: translateY(-2px); 
+}
+
+.bottom-nav .nav-link i {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 2px;
+}
+
+
+.login-container {
+  max-width: 450px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: var(--et-card-bg);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); 
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.btn-primary {
+  background-color: var(--et-primary);
+  border-color: var(--et-primary);
+  font-weight: 600;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    transform 0.1s ease;
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.4); /
+}
+
+.btn-primary:hover {
+  background-color: var(--et-primary-dark);
+  border-color: var(--et-primary-dark);
+  transform: translateY(-1px); 
+  box-shadow: 0 6px 15px rgba(76, 175, 80, 0.5);
+}
+
+
+.text-et-primary {
+  color: var(--et-primary) !important;
+}
+
+.bg-et-primary {
+  background-color: var(--et-primary) !important;
+  color: white !important;
+}
+
+
+.certificate-card {
+  text-align: center;
+  border: 3px solid var(--et-primary);
+  border-radius: 20px;
+  padding: 50px 20px;
+  margin-top: 30px;
+  box-shadow: 0 8px 20px rgba(76, 175, 80, 0.2);
+}
+
+.carbon-offset-badge {
+  background: linear-gradient(90deg, var(--et-primary-dark), var(--et-primary));
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.4);
+}
+
+.qr-code-placeholder {
+  width: 150px;
+  height: 150px;
+  background-color: #e9ecef;
+  margin: 20px auto;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--et-text-muted);
+  font-size: 0.8rem;
+}
+
+.history-table-container {
+  overflow-x: auto;
+}
+
+.history-table {
+  min-width: 600px;
+}
+
+.history-table th {
+  background-color: var(--et-primary-dark);
+  color: white;
+  font-weight: 600;
+}
+
+.history-table td,
+.history-table th {
+  padding: 12px;
+  vertical-align: middle;
+}
+
+.history-table tbody tr:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.005);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.audit-table-container {
+  overflow-x: auto;
+}
+
+.audit-table {
+  min-width: 700px;
+}
+
+.audit-table th {
+  background-color: var(--et-secondary);
+  color: white;
+  font-weight: 600;
+}
+
+.audit-table td,
+.audit-table th {
+  padding: 12px;
+  vertical-align: middle;
+}
+
+.audit-table tbody tr:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.005);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.floating-message {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  transform: translateY(20px);
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--et-primary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--et-primary-dark);
+}

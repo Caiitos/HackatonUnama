@@ -1,14 +1,12 @@
-package model;
+package ecotrade.example.projeto.model;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
+@Entity
 public class TransacaoDeCredito {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)

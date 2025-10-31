@@ -1,9 +1,10 @@
-package model;
+package ecotrade.example.projeto.model;
 
 import jakarta.persistence.*;
 
 import java.util.Objects;
 
+@Entity
 @Table(name = "app_user")
 public class Usuario {
 

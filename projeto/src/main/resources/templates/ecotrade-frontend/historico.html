@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrade - Histórico de Transações</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="d-flex justify-content-between align-items-center py-3 container">
+        <img src="assets/images/Logo Ecotrade.png" alt="EcoTrade Logo" style="max-width: 100px;">
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <i class="fas fa-bars fa-lg"></i>
+        </button>
+    </header>
+
+    <main class="container pb-5 mb-5">
+        <h1 class="dashboard-header">Histórico Público de Transações</h1>
+
+        <section class="info-card">
+            <p class="text-muted small">Transparência e rastreabilidade das negociações de créditos de carbono.</p>
+            
+            <div class="history-table-container mt-4">
+                <table class="table table-striped history-table">
+                    <thead>
+                        <tr>
+                            <th>ID Transação</th>
+                            <th>Créditos (kg)</th>
+                            <th>Data</th>
+                            <th>Tipo de Crédito</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ETX-2025-001</td>
+                            <td>500</td>
+                            <td>25/10/2025</td>
+                            <td>Reflorestamento</td>
+                            <td><span class="badge bg-success">Concluída</span></td>
+                        </tr>
+                        <tr>
+                            <td>ETX-2025-002</td>
+                            <td>1200</td>
+                            <td>26/10/2025</td>
+                            <td>Conservação</td>
+                            <td><span class="badge bg-success">Concluída</span></td>
+                        </tr>
+                        <tr>
+                            <td>ETX-2025-003</td>
+                            <td>300</td>
+                            <td>27/10/2025</td>
+                            <td>Energia Renovável</td>
+                            <td><span class="badge bg-success">Concluída</span></td>
+                        </tr>
+                        <tr>
+                            <td>ETX-2025-004</td>
+                            <td>850</td>
+                            <td>28/10/2025</td>
+                            <td>Reflorestamento</td>
+                            <td><span class="badge bg-success">Concluída</span></td>
+                        </tr>
+                        <tr>
+                            <td>ETX-2025-005</td>
+                            <td>2000</td>
+                            <td>29/10/2025</td>
+                            <td>Conservação</td>
+                            <td><span class="badge bg-success">Concluída</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-center text-muted small mt-3">Os dados pessoais dos negociadores são mantidos em sigilo.</p>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="bottom-nav">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col">
+                        <a href="dashboard.html" class="nav-link">
+                            <i class="fas fa-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="marketplace.html" class="nav-link">
+                            <i class="fas fa-store"></i>
+                            <span>Marketplace</span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="registro.html" class="nav-link">
+                            <i class="fas fa-plus-circle"></i>
+                            <span>Registro</span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="perfil.html" class="nav-link">
+                            <i class="fas fa-user"></i>
+                            <span>Perfil</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </footer>
+
+    <!-- Script principal -->
+    <script src="assets/js/main.js"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
